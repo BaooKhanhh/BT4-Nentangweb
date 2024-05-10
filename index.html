@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <div id="header">
         <div class="header-1">
             <h1>Basic infor</h1>
             <form action="action_page.php">
-                <label for="Ename"><h2>Employee</h2></label>
-               <label for="Number"><p>9</p></label>
-               <label for="Lname"><h2>Last Name</h2></label>
-               <label for="Du lieu"><p>Dodsworth</p></label>
-               <label for="Fname"><h2>First Name</h2></label>
-               <input type="text" id="Fname" name="Fname" value="Anne">
-               <label for="Gname"><h2>Gender</h2></label>
-               <input type="radio" id="Gname" name="fav_language" value="Male">
-               <label for="Male">Male</label><br>
-               <input type="radio" id="Gname" name="fav_language" value="Female">
-               <label for="Female">Female</label><br>
-               <input type="radio" id="Gname" name="fav_language" value="XXX">
-               <label for="XXX">XXX</label><br>
-               <input type="radio" id="Gname" name="fav_language" value="ZZZ">
-               <label for="ZZZ">ZZZ</label><br>
-              <label for="Tname"><h2>Title</h2></label>
-              <input type="text" id="Tname" name="Tname" value="Sales Representaive">
-              <label for="Sname"><h2>Suffix</h2></label>
-              <input type="text" id="Sname" name="Sname" value="Ms.">
-              <label for="Bname"><h2>BirthDate</h2></label>
-              <input type="datetime-local" id="Bname" name="Bname" value="">
-              <label for="Hname"><h2>HireDate</h2></label>
-              <input type="datetime-local" id="Hname" name="Hname" value="">
-              <label for="Ssname"><h2>SSN # (if applicable)</h2></label>
-              <input type="text" id="Ssname" name="Ssname">
-              <label for="rname"><h2>Reports To</h2></label>
-              <input type="number" id="rname" name="rname" value="Buchanan">
-              
+                <label for="Ename">
+                    <h2>Employee</h2>
+                </label>
+                <label for="Number">
+                    <p>9</p>
+                </label>
+                <label for="Lname">
+                    <h2>Last Name</h2>
+                </label>
+                <label for="Du lieu">
+                    <p>Dodsworth</p>
+                </label>
+                <label for="Fname">
+                    <h2>First Name</h2>
+                </label>
+                <input type="text" id="Fname" name="Fname" value="Anne">
+                <label for="Gname">
+                    <h2>Gender</h2>
+                </label>
+                <input type="radio" id="Gname" name="fav_language" value="Male">
+                <label for="Male">Male</label><br>
+                <input type="radio" id="Gname" name="fav_language" value="Female">
+                <label for="Female">Female</label><br>
+                <input type="radio" id="Gname" name="fav_language" value="XXX">
+                <label for="XXX">XXX</label><br>
+                <input type="radio" id="Gname" name="fav_language" value="ZZZ">
+                <label for="ZZZ">ZZZ</label><br>
+                <label for="Tname">
+                    <h2>Title</h2>
+                </label>
+                <input type="text" id="Tname" name="Tname" value="Sales Representaive">
+                <label for="Sname">
+                    <h2>Suffix</h2>
+                </label>
+                <input type="text" id="Sname" name="Sname" value="Ms.">
+                <label for="Bname">
+                    <h2>BirthDate</h2>
+                </label>
+                <input type="datetime-local" id="Bname" name="Bname" value="">
+                <label for="Hname">
+                    <h2>HireDate</h2>
+                </label>
+                <input type="datetime-local" id="Hname" name="Hname" value="">
+                <label for="Ssname">
+                    <h2>SSN # (if applicable)</h2>
+                </label>
+                <input type="text" id="Ssname" name="Ssname">
+                <label for="rname">
+                    <h2>Reports To</h2>
+                </label>
+                <select name="rname" id="rname" size="1" multiple>
+                    <option value="Buchanan">Buchanan</option>
+                    <option value="Real Madrid">Rm</option>
+
+
+                </select>
+
 
 
 
@@ -47,11 +79,70 @@
         </div>
 
         <div class="header-2">
+            <h1>Contact Info</h1>
+            <form action="action_page.php">
+                <label for="Ename">
+                    <h2>Email</h2>
+                </label>
+                <input type="text" id="Ename" name="Ename" value="name@example.com">
+                <label for="Address">
+                    <h2>Address</h2>
+                </label>
+                <input type="text" id="Address" name="Address" value="7 Houndstooth Rd.">
+                <label for="City">
+                    <h2>City</h2>
+                </label>
+                <input type="text" id="City" name="City" value="London">
+                <label for="Region">
+                    <h2>Region</h2>
+                </label>
+                <input type="text" id="Region" name="Region" value="">
+                <label for="Postal Code">
+                    <h2>Postal Code</h2>
+                </label>
+                <input type="text" id="Postal Code" name="Postal Code" value="WG2 7LT"><br>
+                <label for="CountryS"><h2>Country</h2></label>
+                <input list="CountryS" name="Country" id="Country">
+                <datalist id="CountryS">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+
+
+
+
+                <label for="US Home Phone">
+                    <h2>US Home Phone</h2>
+                </label>
+                <input type="text" id="US" name="US Home Phone" value="(234)234-2342">
+                <label for="Photo">
+                    <h2>Photo</h2>
+                </label>
+                <input type="text" id="Photo" name="Photo" value="EmpID9.bmp">
+
+
+
+
+            </form>
+
 
         </div>
 
         <div class="header-3">
+            <h1>Optional Info</h1>
+            <form action="action_page.php">
+                <label for="Notes">
+                    <h2>Notes</h2>
+                </label>
+                <textarea name="Notes" rows="10" cols="30">The cat was playing in the garden.</textarea>
 
+
+
+
+            </form>
         </div>
 
 
@@ -63,6 +154,8 @@
     <div id="footer">
 
     </div>
-    
+
+
 </body>
+
 </html>
