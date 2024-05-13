@@ -10,9 +10,11 @@
 
 <body>
     <div id="header">
-        <div class="header-1">
-            <h1>Basic infor</h1>
+        <div id="header-1">
+            
             <form action="action_page.php">
+                <h1>Basic info</h1>
+            <hr>
                 <label for="Ename">
                     <h2>Employee</h2>
                 </label>
@@ -78,13 +80,15 @@
 
         </div>
 
-        <div class="header-2">
-            <h1>Contact Info</h1>
+        <div id="header-2">
+            
             <form action="action_page.php">
-                <label for="Ename">
+                <h1>Contact Info</h1>
+            <hr>
+                <label for="Ename" >
                     <h2>Email</h2>
                 </label>
-                <input type="text" id="Ename" name="Ename" value="name@example.com">
+                <input type="text"  id="Ename" name="Ename" value="name@example.com" >
                 <label for="Address">
                     <h2>Address</h2>
                 </label>
@@ -131,13 +135,25 @@
 
         </div>
 
-        <div class="header-3">
-            <h1>Optional Info</h1>
+        <div id="header-3">
+          
             <form action="action_page.php">
+                <h1>Optional Info</h1>
+                <hr>
                 <label for="Notes">
                     <h2>Notes</h2>
                 </label>
-                <textarea name="Notes" rows="10" cols="30">The cat was playing in the garden.</textarea>
+                <textarea name="Notes" rows="10" cols="30">The cat was playing in the garden.</textarea><br>
+                <label for="Pname"><h2>Preferred Shift</h2></label>
+                <input type="checkbox" id="Regular" name="Regular" value="a">
+                <label for="Regular">Regular</label><br>
+                <input type="checkbox" id="Gravy_Yard" name="Gravy_Yard" value="b">
+                <label for="Gravy_Yard">Gravy Yard</label><br>
+                <label for="Active"><h2>Active?</h2></label>
+                <input type="checkbox" id="Active" name="Active" value="Active"><br>
+                <label for="Are"><h2>Are you humman?</h2></label>
+                
+
 
 
 
@@ -152,6 +168,8 @@
     </div>
 
     <div id="footer">
+
+        
 
     </div>
 
